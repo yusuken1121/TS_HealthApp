@@ -23,7 +23,7 @@ var Score = /** @class */ (function () {
 var Food = /** @class */ (function () {
     function Food(element) {
         this.element = element;
-        element.addEventListener("click", this.clickEventHandler.bind(this));
+        this.element.addEventListener("click", this.clickEventHandler.bind(this));
     }
     Food.prototype.clickEventHandler = function () {
         this.element.classList.toggle('food--active');
